@@ -1,35 +1,12 @@
-# React-Typescript-Template
+# React-DSM-Template
 
 ## Description
 
-- custom `webpack`, no more blackbox.
-- custom `eslint-plugin-jerry`
-- path alias
+React Design System Template
 
-  | alias | real path |
-  | ------------------- | ------------------------------------------------------------- |
-  | @ | <rootDir>/src/ |
-  | test-utils | <rootDir>/utils/test-utils |
-
-- Support `tailwindcss` with `jit` mode
-  
 ## Demo
 
-- [Storybook](https://c1495616js.github.io/react-typescript-template/)
-
-#### Features:
-
-- ⚛️ React 17
-- ⛑️ Type safety via TypeScript
-- 🔐 Private, public, and shared routes
-- 💄 Write SCSS & future CSS with PostCSS + preset-env
-- 🎯 Browserslist for specific browser support
-- 🖊 Add SVGs, images, and custom fonts
-- 🌎 Path aliasing for streamlined imports
-- 🌈 Prettier for consistent code style
-- 👀 Lint your code with ESLint
-- 🐺 Husky + lint-staged for code quality assurance
-- 🧪 Jest + React Testing Library for tests
+- [Storybook](https://c1495616js.github.io/react-dsm-template/)
 
 #### Developers:
 
@@ -39,12 +16,17 @@
 
 Run the frontend via either option below, then visit the client at `http://localhost:8080`
 
-**_NPM:_**
+**_Playground:_**
 
 ```
-cp .env.example .env // add any env variables here
 npm install
 npm run start
+```
+
+**_Storybook:_**
+
+```
+npm run storybook
 ```
 
 **_NPM:_**
@@ -58,25 +40,3 @@ npm run start
 | npm run test        | Runs the suite of Jest tests                                  |
 | npm run test:watch  | Runs and Watches the suite of Jest tests                      |
 | npm run lint        | Runs Prettier, ESLint, and StyleLint formatters               |
-
-## Gotcha
-
-### Storybook
-
-- webpack 5 has some issue when simply using `npx sb init`.
-  Refering to this [article](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324)
-
-```
-npm i -D @storybook/builder-webpack5@latest @storybook/manager-webpack5@latest
-
-// under main.js
-module.exports = {
-  core: {
-    builder: "webpack5",
-  },
-};
-```
-
-- Deploy via GA
-
-https://github.com/storybookjs/storybook-deployer
