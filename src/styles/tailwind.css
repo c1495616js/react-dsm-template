@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    font-size: 3rem; /* 48px */
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+  }
+  h2 {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+  }
+  h3 {
+    font-size: 1.875rem; /* 30px */
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+  h4 {
+    font-size: 1.75rem; /* 28px */
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+  h5 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+  }
+  h6 {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+  }
+  p {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  span {
+    font-size: 0.8125rem; /* 13px */
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  caption {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .button__label--min {
+    min-width: 24px;
+  }
+  .button__label {
+    min-width: 32px;
+  }
+
+  .min-width--sm {
+    min-width: 132px;
+  }
+
+  .min-width {
+    min-width: 160px;
+  }
+
+  .min-width-popconfirm {
+    min-width: 244px;
+  }
+}
